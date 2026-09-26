@@ -19,7 +19,7 @@ Burp Suite Style Logger & Repeater Extension for Mobile Browsers
 
 ---
 ### 2 - Download Extension
-[Download the .zip file from here]([https://githubusercontent.com/sudokage-sh/burp-mobile/blob/53d1cc1633fb918516b3018bc7ddb7753a277a81/burp-mobile.zip](https://github.com/sudokage-sh/burp-mobile/blob/main/burp-mobile.zip?raw=true))
+[Download the .zip file from here]((https://github.com/sudokage-sh/burp-mobile/blob/main/burp-mobile.zip?raw=true))
 
 ---
 ### 3 - Open Lemur Browser → Extensions → Load .zip File
