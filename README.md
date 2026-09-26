@@ -15,7 +15,7 @@ Burp Suite Style Logger & Repeater Extension for Mobile Browsers
 ## Installation
 
 ### 1 - Download Lemur Browser (Recomended)
-<img src="https://github.com/sudokage-sh/burp-mobile/blob/main/images/download_lemur.jpg" width="350" alt="Download Lemur">
+<img src="https://github.com/sudokage-sh/burp-mobile/raw/main/images/download_lemur.jpg" width="350" alt="Download Lemur">
 
 ---
 ### 2 - Download Extension
