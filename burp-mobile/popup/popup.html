@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Burp Mobile</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <div class="header">
+    <h1>Burp Mobile</h1>
+    <div class="tabs">
+      <button class="tab active" data-tab="logger">Logger</button>
+      <button class="tab" data-tab="repeater">Repeater</button>
+    </div>
+  </div>
+
+  <div id="loggerTab" class="tab-content active">
+    <div class="toolbar">
+      <button id="refreshBtn" class="btn small">Refresh</button>
+      <button id="clearBtn" class="btn small secondary">Clear</button>
+      <span id="countLabel" class="count">0</span>
+    </div>
+    <div id="requestList" class="request-list">
+      <div class="empty">No requests yet.<br>Browse any site...</div>
+    </div>
+  </div>
+
+  <div id="detailView" class="detail-view hidden">
+    <div class="detail-header">
+      <button id="backBtn" class="btn small">← Back</button>
+      <button id="sendToRepeaterBtn" class="btn small primary">Send to Repeater →</button>
+    </div>
+    <div class="detail-meta" id="detailMeta"></div>
+    <div class="section">
+      <div class="section-title">Request <button class="copy-btn" data-copy="reqRaw">Copy</button></div>
+      <textarea id="reqRaw" class="code-editor" readonly></textarea>
+    </div>
+    <div class="section">
+      <div class="section-title">Response <button class="copy-btn" data-copy="respRaw">Copy</button></div>
+      <textarea id="respRaw" class="code-editor" readonly></textarea>
+    </div>
+  </div>
+
+  <div id="repeaterTab" class="tab-content">
+    <div class="repeater-wrap">
+      <div class="section-title" style="padding:8px 12px 0;">Request </div>
+      <textarea id="repRaw" class="raw-editor" placeholder="POST /api/test HTTP/1.1
+Host: example.com
+Content-Type: application/json
+
+{&quot;key&quot;:&quot;value&quot;}"></textarea>
+      <div class="rep-actions">
+        <button id="sendBtn" class="btn primary full">Send</button>
+      </div>
+      <div id="repResult" class="rep-result hidden">
+        <div class="section-title">Response <span id="repStatus"></span> <button class="copy-btn" data-copy="repRespRaw">Copy</button></div>
+        <textarea id="repRespRaw" class="code-editor response-editor" readonly></textarea>
+      </div>
+    </div>
+  </div>
+
+  <script src="popup.js"></script>
+</body>
+</html>
